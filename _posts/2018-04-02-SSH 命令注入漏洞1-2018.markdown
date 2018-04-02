@@ -1,0 +1,67 @@
+---
+layout:     post
+title:      "Welcome to Hux Blog"
+subtitle:   "ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?"
+date:       2015-09-22
+author:     "Hux"
+header-img: "img/post-bg-js-version.jpg"
+tags:
+    - 前端开发
+    - JavaScript
+    - 翻译
+---
+
+红日安全作业1 --- SSH 命令注入漏洞
+===
+
+登入http://vulapps.evalbug.com/ ，选择了一个较简单的shell漏洞靶场http://vulapps.evalbug.com/s_ssh_1/ ，以下简单记录下执行的过程。
+
+1. 安装docker
+
+>  red@ubuntu:~$ sudo apt install docker.io
+
+2. 启动docker 
+ 
+>  red@ubuntu:~$ sudo service docker start
+
+3. 查看docker
+
+>  red@ubuntu:~$ sudo docker ps
+    
+    
+4. 导入s_ssh_1镜像
+    
+>  red@ubuntu:~$ sudo docker pull medicean/vulapps:s_ssh_1
+    
+5. 启动环境
+
+>  red@ubuntu:~$ sudo docker run -d -p 8000:80 medicean/vulapps:s_ssh_1
+    
+6. 查看docker容器
+  
+>   red@ubuntu:~$ sudo docker ps
+>
+>   CONTAINER ID        IMAGE                      COMMAND             CREATED             STATUS              PORTS                           NAMES
+>   af8f18bb054c        medicean/vulapps:s_ssh_1   "/start.sh"         22 minutes ago      Up 22 minutes       443/tcp, 0.0.0.0:8000->80/tcp   kind_meninsky
+
+
+7. 进入docker环境
+
+>   red@ubuntu:~$ sudo docker exec -it af8f18bb054c /bin/bash
+>
+>   root@af8f18bb054c:/# 
+>   root@af8f18bb054c:/# ls /var/www/html/ 
+>   index.php  repos
+    
+8. 访问 http://127.0.0.1:8000，输入https://github.com/VulApps/CVE-2017-1000117.git ，并summit。然后shell命令查看，可以看到命令注入成功，shell命令得到执行。
+
+>   root@af8f18bb054c:/var/www/html# ls
+>
+>   index.php  repos  vul
+>
+>   root@af8f18bb054c:/var/www/html# cat vul 
+>
+>   uid=33(www-data) gid=33(www-data) groups=33(www-data)
+>
+>   root@af8f18bb054c:/var/www/html# exit
+
