@@ -1,14 +1,12 @@
 ---
 layout:     post
-title:      "Welcome to Hux Blog"
-subtitle:   "ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?"
-date:       2015-09-22
-author:     "Hux"
+title:      "SSH 命令注入漏洞"
+subtitle:   " "
+date:       2018-04-02
+author:     "object8421"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-    - 前端开发
-    - JavaScript
-    - 翻译
+    - 红日安全作业
 ---
 
 红日安全作业1 --- SSH 命令注入漏洞
