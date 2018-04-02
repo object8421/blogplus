@@ -27,6 +27,7 @@
 6. 查看docker容器
   
 >   red@ubuntu:~$ sudo docker ps
+>
 >   CONTAINER ID        IMAGE                      COMMAND             CREATED             STATUS              PORTS                           NAMES
 >   af8f18bb054c        medicean/vulapps:s_ssh_1   "/start.sh"         22 minutes ago      Up 22 minutes       443/tcp, 0.0.0.0:8000->80/tcp   kind_meninsky
 
