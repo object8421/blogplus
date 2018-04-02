@@ -35,6 +35,7 @@
 7. 进入docker环境
 
 >   red@ubuntu:~$ sudo docker exec -it af8f18bb054c /bin/bash
+>
 >   root@af8f18bb054c:/# 
 >   root@af8f18bb054c:/# ls /var/www/html/ 
 >   index.php  repos
