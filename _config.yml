@@ -1,22 +1,22 @@
 # Site settings
-title: geek
-SEOTitle: geek | geek
+title: Object8421
+SEOTitle: Object8421 | Object8421
 header-img: img/home-bg.jpg
-email: gaozhongjia123@126.com
+email: object8421@163.com
 description: ""
 keyword: ""
-url: "http://huangxuan.me"              # your host, for absolute URL
+url: "http://123.207.1.187:4000"              # your host, for absolute URL
 baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     geek
-zhihu_username:     geek
-github_username:    geek
+#weibo_username:     geek
+#zhihu_username:     geek
+github_username:    object8421
 #twitter_username:  geek
-facebook_username:  geek
+#facebook_username:  geek
 
 
 
@@ -50,7 +50,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: huxblog
+duoshuo_username: object8421
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -62,13 +62,13 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: 123.207.1.187:4000
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
+sidebar-about-description: "写写代码，做做产品，看看世界。"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -83,7 +83,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 friends: [
     {
         title: "Hux Blog",
-        href: "http://huangxuan.me"
+        href: "http://123.207.1.187:4000"
     },{
         title: "Foo",
         href: "#"
