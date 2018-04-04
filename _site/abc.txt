@@ -1,0 +1,5 @@
+Configuration file: /root/blogplus/_config.yml
+            Source: /root/blogplus
+       Destination: /root/blogplus/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 

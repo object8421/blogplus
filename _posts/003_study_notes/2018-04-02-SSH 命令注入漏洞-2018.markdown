@@ -1,7 +1,9 @@
 ---
 layout:     post
 title:      "SSH 命令注入漏洞"
-subtitle:   " "
+categories: 003_study_notes
+subtitle:   "Keynote: ssh漏洞"
+iframe:     "http://huangxuan.me/js-module-7day/"
 date:       2018-04-02
 author:     "object8421"
 header-img: "img/home-bg.jpg"
