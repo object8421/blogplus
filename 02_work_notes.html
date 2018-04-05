@@ -1,0 +1,44 @@
+---
+layout: page
+title: 工作笔记
+group: navigation
+header-img: "img/product_bg.jpg"
+---
+
+{% for rpost in site.categories.02_work_notes  %}
+<div class="post-preview">
+    <a href="{{ rpost.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ rpost.title }}
+        </h2>
+        {% if rpost.subtitle %}
+        <h3 class="post-subtitle">
+            {{ rpost.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ rpost.content | strip_html | truncate:200 }}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if rpost.author %}{{ rpost.author }}{% else %}{{ site.title }}{% endif %} on {{ rpost.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

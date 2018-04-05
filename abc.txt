@@ -3,8 +3,8 @@ Configuration file: /root/blogplus/_config.yml
        Destination: /root/blogplus/_site
  Incremental build: disabled. Enable with --incremental
       Generating... 
-                    done in 0.21 seconds.
+                    done in 0.242 seconds.
  Auto-regeneration: enabled for '/root/blogplus'
 Configuration file: /root/blogplus/_config.yml
-    Server address: http://0.0.0.0:4000/blog/
+    Server address: http://0.0.0.0:4000/
   Server running... press ctrl-c to stop.

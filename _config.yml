@@ -1,12 +1,12 @@
 # Site settings
 title: Object8421
 SEOTitle: Object8421 | Object8421
-header-img: img/home-bg.jpg
+header-img: img/home_bg_m.jpg
 email: object8421@163.com
 description: ""
 keyword: ""
 url: "http://123.207.1.187:4000"              # your host, for absolute URL
-baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
+#baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
@@ -69,7 +69,7 @@ ga_domain: 123.207.1.187:4000
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "写写代码，做做产品，看看世界。"
-sidebar-avatar: /blog/img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -82,7 +82,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Hux Blog",
+        title: "Object8421's Blog",
         href: "http://123.207.1.187:4000"
     },{
         title: "Foo",
